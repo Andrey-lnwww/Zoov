@@ -1141,7 +1141,7 @@
                 setTimeout((() => {
                     this._focusTrap();
                 }), 50);
-                this.popupLogging(`Закрыл попап`);
+                this.popupLogging();
             }
             _getHash() {
                 if (this.options.hashSettings.location) this.hash = this.targetOpen.selector.includes("#") ? this.targetOpen.selector : this.targetOpen.selector.replace(".", "#");
@@ -1175,7 +1175,7 @@
                 if (!this.isOpen && this.lastFocusEl) this.lastFocusEl.focus(); else focusable[0].focus();
             }
             popupLogging(message) {
-                this.options.logging ? FLS(`[Попапос]: ${message}`) : null;
+                this.options.logging;
             }
         }
         flsModules.popup = new Popup({});
@@ -1215,8 +1215,7 @@
                         behavior: "smooth"
                     });
                 }
-                FLS(`[gotoBlock]: Юхуу...едем к ${targetBlock}`);
-            } else FLS(`[gotoBlock]: Ой ой..Такого блока нет на странице: ${targetBlock}`);
+            }
         };
         function formFieldsInit(options = {
             viewPass: false,
@@ -1442,10 +1441,7 @@
                 this._this = this;
                 if (this.config.init) {
                     const selectItems = data ? document.querySelectorAll(data) : document.querySelectorAll("select");
-                    if (selectItems.length) {
-                        this.selectsInit(selectItems);
-                        this.setLogging(`Проснулся, построил селектов: (${selectItems.length})`);
-                    } else this.setLogging("Сплю, нет ни одного select zzZZZzZZz");
+                    if (selectItems.length) this.selectsInit(selectItems);
                 }
             }
             getSelectClass(className) {
