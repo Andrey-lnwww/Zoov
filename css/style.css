@@ -1967,17 +1967,9 @@ body::after {
 
 .header._header-scroll {
   position: fixed;
-  top: -200%;
   background-color: #fff;
   padding-top: 9px;
   padding-bottom: 9px;
-}
-
-.header._header-scroll._header-show {
-  top: 0;
-  -webkit-transition: top 0.8s ease 0s;
-  -o-transition: top 0.8s ease 0s;
-  transition: top 0.8s ease 0s;
 }
 
 .header._header-scroll .menu__item {
@@ -2261,7 +2253,7 @@ body::after {
   -o-transition: 0.3s all ease;
   transition: 0.3s all ease;
   font-weight: 700;
-  padding-bottom: 25px;
+  margin-bottom: 25px;
   line-height: 140%;
 }
 
@@ -2581,7 +2573,7 @@ body::after {
 }
 
 .no-webp .food::before{
-  background: url("../img/zooov-aside.png") 0 0 no-repeat; }
+  background-image: url("../img/zooov-aside.png"); }
 
 .food::before {
   content: "";
@@ -2749,15 +2741,15 @@ body::after {
   }
 }
 
-@supports (height: clamp( 4.125rem , 3.2444379391rem  +  3.7470725995vw , 6.125rem )) {
+@supports (height: clamp( 4.375rem , 3.6045081967rem  +  3.2786885246vw , 6.125rem )) {
   .food-content--decor::after {
-    height: clamp( 4.125rem , 3.2444379391rem  +  3.7470725995vw , 6.125rem );
+    height: clamp( 4.375rem , 3.6045081967rem  +  3.2786885246vw , 6.125rem );
   }
 }
 
-@supports not (height: clamp( 4.125rem , 3.2444379391rem  +  3.7470725995vw , 6.125rem )) {
+@supports not (height: clamp( 4.375rem , 3.6045081967rem  +  3.2786885246vw , 6.125rem )) {
   .food-content--decor::after {
-    height: calc(4.125rem + 2 * (100vw - 23.5rem) / 53.375);
+    height: calc(4.375rem + 1.75 * (100vw - 23.5rem) / 53.375);
   }
 }
 
@@ -3397,8 +3389,8 @@ body::after {
 .card__image {
   -o-object-fit: cover;
      object-fit: cover;
-  pointer-events: none;
   width: 100%;
+  cursor: pointer;
 }
 
 .card__kg {
@@ -3413,6 +3405,7 @@ body::after {
   line-height: 140%;
   text-align: center;
   color: #ec7973;
+  cursor: pointer;
 }
 
 .card__title {
@@ -4612,9 +4605,6 @@ body::after {
 }
 
 ._spoller-active.spollers__title-questions::after {
-  -webkit-transition: 0.4s all ease;
-  -o-transition: 0.4s all ease;
-  transition: 0.4s all ease;
   -webkit-transform: rotate(90deg);
       -ms-transform: rotate(90deg);
           transform: rotate(90deg);
@@ -5548,9 +5538,6 @@ button.swiper-pagination-bullet {
     background: url("../img/footer/footer-apple.png") 0 0 no-repeat; }
 
   .composition__slide {
-    -webkit-column-gap: 4.375rem;
-       -moz-column-gap: 4.375rem;
-            column-gap: 4.375rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -5560,15 +5547,15 @@ button.swiper-pagination-bullet {
   }
 
   .composition__adult {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 50%;
-            flex: 1 1 50%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
   }
 
   .composition__puppies {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 50%;
-            flex: 1 1 50%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
   }
 }
 
@@ -5903,23 +5890,11 @@ button.swiper-pagination-bullet {
   }
 
   .contacts__number {
-    padding-bottom: 23px;
+    margin-bottom: 23px;
   }
 
   .footer-form__subtitle {
     padding-bottom: 20px;
-  }
-
-  .info__address {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 100%;
-            flex: 1 1 100%;
-  }
-
-  .info__offer {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 100%;
-            flex: 1 1 100%;
   }
 
   .info__privacy {
@@ -6038,6 +6013,19 @@ button.swiper-pagination-bullet {
 }
 
 @media (max-width: 76.875em) {
+  .info__address {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+    padding-bottom: 8px;
+  }
+
+  .info__offer {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+  }
+
   .trial__box {
     padding-right: 25px;
   }
@@ -6406,6 +6394,12 @@ button.swiper-pagination-bullet {
       width: calc(20.4375rem + 19.3125 * (100vw - 23.5rem) / 32.75);
     }
 }
+}
+
+@media (max-width: 50.5em) {
+  .info__offer {
+    padding-bottom: 8px;
+  }
 }
 
 @media (max-width: 47.99875em) {
@@ -6789,10 +6783,6 @@ button.swiper-pagination-bullet {
     bottom: -100px;
     right: -20px;
   }
-
-  .info__offer {
-    padding-bottom: 8px;
-  }
 }
 
 @media (max-width: 29.9375em) {
@@ -6987,12 +6977,21 @@ button.swiper-pagination-bullet {
   }
 
   .card__item:hover {
-    -webkit-transition: 0.3s all ease;
-    -o-transition: 0.3s all ease;
-    transition: 0.3s all ease;
+    -webkit-transition: 0.4s all ease;
+    -o-transition: 0.4s all ease;
+    transition: 0.4s all ease;
     -webkit-transform: translateY(3px);
         -ms-transform: translateY(3px);
             transform: translateY(3px);
+  }
+
+  .card__item:not(:hover) {
+    -webkit-transition: 0.4s all ease;
+    -o-transition: 0.4s all ease;
+    transition: 0.4s all ease;
+    -webkit-transform: translateY(0px);
+        -ms-transform: translateY(0px);
+            transform: translateY(0px);
   }
 
   .list-content__item:hover::before,
@@ -7048,7 +7047,7 @@ button.swiper-pagination-bullet {
 
 .webp .food{ background-image: url(../img/main-bg.webp); }
 
-.webp .food::before{ background: url(../img/zooov-aside.webp) 0 0 no-repeat; }
+.webp .food::before{ background-image: url(../img/zooov-aside.webp); }
 
 .webp .calculate{ background-image: url(../img/cards/card-apple.webp), url(../img/cards/card-meat.webp); }
 

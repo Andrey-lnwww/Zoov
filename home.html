@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220908210827">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220909122721">
 	<link rel="shortcut icon" href="favicon.ico">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -24,16 +24,16 @@
 					<div class="header__menu menu">
 						<nav class="menu__body">
 							<ul class="menu__list">
-								<li class="menu__item"><a href="#" data-goto=".product" data-goto-speed="1000" class="menu__link">BARF</a>
+								<li class="menu__item"><a href="#" data-goto=".product" data-goto-speed="1000" data-goto-header class="menu__link">BARF</a>
 								</li>
-								<li class="menu__item"><a href="#" class="menu__link" data-goto=".trial" data-goto-header>Рационы</a></li>
-								<li class="menu__item"><a href="#" class="menu__link" data-goto=".diet" data-goto-header>ZOOOV</a></li>
-								<li class="menu__item"><a href="#" class="menu__link" data-goto=".benefits" data-goto-header>О нас</a></li>
-								<li class="menu__item"><a href="#" class="menu__link" data-goto=".order" data-goto-header>Доставка</a></li>
-								<li class="menu__item"><a href="#" class="menu__link" data-goto=".questions" data-goto-header>FAQ</a></li>
-								<li class="menu__item" data-goto=".footer"><a href="#" class="menu__link">Контакты</a></li>
+								<li class="menu__item"><a href="#" class="menu__link" data-goto=".trial" data-goto-header data-goto-speed="1000">Рационы</a></li>
+								<li class="menu__item"><a href="#" class="menu__link" data-goto=".diet" data-goto-header data-goto-speed="1000">ZOOOV</a></li>
+								<li class="menu__item"><a href="#" class="menu__link" data-goto=".benefits" data-goto-header data-goto-speed="1000">О нас</a></li>
+								<li class="menu__item"><a href="#" class="menu__link" data-goto=".order" data-goto-header data-goto-speed="1000">Доставка</a></li>
+								<li class="menu__item"><a href="#" class="menu__link" data-goto=".questions" data-goto-header data-goto-speed="1000">FAQ</a></li>
+								<li class="menu__item" data-goto=".footer" data-goto-speed="1000" data-goto-header><a href="#" class="menu__link">Контакты</a></li>
 							</ul>
-							<button class="menu__button button" type="button">Выбрать рацион</button>
+							<button data-goto=".trial" class="menu__button button" type="button">Выбрать рацион</button>
 						</nav>
 					</div>
 				</div>
@@ -173,8 +173,8 @@
 								<div class="card__wrapper swiper-wrapper card__wrapper-trial">
 									<div class="card__slide swiper-slide trial-card-slide">
 										<div class="card__item">
-											<picture><source data-srcset="img/cards/1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="card__image swipaer-lazy" width="282" height="335" data-src="img/cards/1.png" alt="Набор для собаки M"></picture>
-											<p class="card__kg">Для собак до 10кг</p>
+											<picture><source data-srcset="img/cards/1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-popup="#popup-trial-1" class="card__image swipaer-lazy" width="282" height="335" data-src="img/cards/1.png" alt="Набор для собаки M"></picture>
+											<p data-popup="#popup-trial-1" class="card__kg">Для собак до 10кг</p>
 											<h4 class="card__title">Набор M</h4>
 											<div class="card__amount">
 												<p class="card__description">4 шт. – баранина/кролик</p>
@@ -190,8 +190,8 @@
 									</div>
 									<div class="card__slide swiper-slide trial-card-slide">
 										<div class="card__item">
-											<picture><source data-srcset="img/cards/2.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="card__image swipaer-lazy" width="282" height="335" data-src="img/cards/2.png" alt="Набор для собаки L"></picture>
-											<p class="card__kg">Для собак до 15кг</p>
+											<picture><source data-srcset="img/cards/2.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-popup="#popup-trial-2" class="card__image swipaer-lazy" width="282" height="335" data-src="img/cards/2.png" alt="Набор для собаки L"></picture>
+											<p data-popup="#popup-trial-2" class="card__kg">Для собак до 15кг</p>
 											<h4 class="card__title">Набор L</h4>
 											<div class="card__amount">
 												<p class="card__description">4 шт. – баранина/кролик</p>
@@ -207,8 +207,8 @@
 									</div>
 									<div class="card__slide swiper-slide trial-card-slide">
 										<div class="card__item">
-											<picture><source data-srcset="img/cards/3.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="card__image swiper-lazy" width="282" height="335" data-src="img/cards/3.png" alt="Набор для собаки XL"></picture>
-											<p class="card__kg">Для собак до 20кг</p>
+											<picture><source data-srcset="img/cards/3.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-popup="#popup-trial-3" class="card__image swiper-lazy" width="282" height="335" data-src="img/cards/3.png" alt="Набор для собаки XL"></picture>
+											<p data-popup="#popup-trial-3" class="card__kg">Для собак до 20кг</p>
 											<h4 class="card__title">Набор XL</h4>
 											<div class="card__amount">
 												<p class="card__description">4 шт. – баранина/кролик</p>
@@ -251,7 +251,7 @@
 								<div class="swiper-wrapper diet-card__wrapper">
 									<div class="card__slide swiper-slide">
 										<div class="card__item diet-card__item diet-card__item--mark-1">
-											<picture><source data-srcset="img/cards/bottom-card-1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="card__image swiper-lazy" width="282" height="335" data-src="img/cards/bottom-card-1.png" alt="Еда для взрослых собак"></picture>
+											<picture><source data-srcset="img/cards/bottom-card-1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-popup="#popup-diet-1" class="card__image swiper-lazy" width="282" height="335" data-src="img/cards/bottom-card-1.png" alt="Еда для взрослых собак"></picture>
 											<h4 class="card__title diet-card__title">Для взрослых собак</h4>
 											<p class="card__subtitle diet-card__subtitle">Индейка/Говядина</p>
 											<div class="card__amount diet-card__amount">
@@ -265,7 +265,7 @@
 									</div>
 									<div class="card__slide swiper-slide">
 										<div class="card__item diet-card__item diet-card__item--mark-1">
-											<picture><source data-srcset="img/cards/bottom-card-2.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="card__image swiper-lazy" width="282" height="335" data-src="img/cards/bottom-card-2.png" alt="Еда для щенков"></picture>
+											<picture><source data-srcset="img/cards/bottom-card-2.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-popup="#popup-diet-2" class="card__image swiper-lazy" width="282" height="335" data-src="img/cards/bottom-card-2.png" alt="Еда для щенков"></picture>
 											<h4 class="card__title diet-card__title">Для щенков</h4>
 											<p class="card__subtitle diet-card__subtitle">Индейка/Говядина</p>
 											<div class="card__amount diet-card__amount">
@@ -279,7 +279,7 @@
 									</div>
 									<div class="card__slide swiper-slide">
 										<div class="card__item diet-card__item diet-card__item--mark-2">
-											<picture><source data-srcset="img/cards/bottom-card-3.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="card__image swiper-lazy" width="282" height="335" data-src="img/cards/bottom-card-3.png" alt="Еда для взрослых собак"></picture>
+											<picture><source data-srcset="img/cards/bottom-card-3.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-popup="#popup-diet-3" class="card__image swiper-lazy" width="282" height="335" data-src="img/cards/bottom-card-3.png" alt="Еда для взрослых собак"></picture>
 											<h4 class="card__title diet-card__title">Для взрослых собак</h4>
 											<p class="card__subtitle diet-card__subtitle">Баранина/Кролик</p>
 											<div class="card__amount diet-card__amount">
@@ -294,7 +294,7 @@
 									</div>
 									<div class="card__slide swiper-slide">
 										<div class="card__item diet-card__item diet-card__item--mark-2">
-											<picture><source data-srcset="img/cards/bottom-card-4.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="card__image swiper-lazy" width="282" height="335" data-src="img/cards/bottom-card-4.png" alt="Еда для щенков"></picture>
+											<picture><source data-srcset="img/cards/bottom-card-4.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-popup="#popup-diet-4" class="card__image swiper-lazy" width="282" height="335" data-src="img/cards/bottom-card-4.png" alt="Еда для щенков"></picture>
 											<h4 class="card__title diet-card__title">Для щенков</h4>
 											<p class="card__subtitle diet-card__subtitle">Баранина/Кролик</p>
 											<div class="card__amount diet-card__amount">
@@ -677,10 +677,10 @@
 							<h3 class="contacts__header">Контакты</h3>
 							<p class="contacts__description">Вы всегда можете с нами связаться
 								по телефону или в мессенджерах</p>
-							<a href='#' class="contacts__number">+7 (900)000-00-00</a>
-							<a href='#' class="contacts__whatsapp footer-button">Написать в WhatsApp</a>
-							<a href='#' class="contacts__telegram footer-button">Написать в Telegram</a>
-							<p class="contacts__subscribe">Подписывайтесь на наш <a href='#' class="contacts__instagram">Instagram</a>
+							<a href='##' class="contacts__number">+7 (900)000-00-00</a>
+							<a href='##' class="contacts__whatsapp footer-button">Написать в WhatsApp</a>
+							<a href='##' class="contacts__telegram footer-button">Написать в Telegram</a>
+							<p class="contacts__subscribe">Подписывайтесь на наш <a href='##' class="contacts__instagram">Instagram</a>
 								и следите за новостями</p>
 						</div>
 					</div>
@@ -716,8 +716,8 @@
 						<p class="info__address">ИП Коваленко Евгений Геннадьевич ИНН784215731801, адрес производства г. Санкт-Петербург
 							17-я
 							линия В.О 66, пом. 2/07</p>
-						<a href="#" class="info__offer">Публичная оферта</a>
-						<a href="#" class="info__privacy">Политика конфеденциальности</a>
+						<a href="##" class="info__offer">Публичная оферта</a>
+						<a href="##" class="info__privacy">Политика конфеденциальности</a>
 					</div>
 				</div>
 			</div>
@@ -1513,7 +1513,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20220908210827"></script>
+	<script src="js/app.min.js?_v=20220909122721"></script>
 </body>
 
 </html>
