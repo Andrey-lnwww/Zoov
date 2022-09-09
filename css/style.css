@@ -1972,6 +1972,12 @@ body::after {
   padding-bottom: 9px;
 }
 
+.header._header-scroll._header-show {
+  -webkit-transition: top 0.8s ease 0s;
+  -o-transition: top 0.8s ease 0s;
+  transition: top 0.8s ease 0s;
+}
+
 .header._header-scroll .menu__item {
   color: #000;
 }
@@ -2073,19 +2079,19 @@ body::after {
   line-height: 140%;
 }
 
-@supports ((-moz-column-gap: clamp( 2.375rem , 0.7083333333rem  +  3.4722222222vw , 3.3125rem )) or (column-gap: clamp( 2.375rem , 0.7083333333rem  +  3.4722222222vw , 3.3125rem ))) {
+@supports ((-moz-column-gap: clamp( 1.875rem , -0.6805555556rem  +  5.3240740741vw , 3.3125rem )) or (column-gap: clamp( 1.875rem , -0.6805555556rem  +  5.3240740741vw , 3.3125rem ))) {
   .menu__list {
-    -webkit-column-gap: clamp( 2.375rem , 0.7083333333rem  +  3.4722222222vw , 3.3125rem );
-       -moz-column-gap: clamp( 2.375rem , 0.7083333333rem  +  3.4722222222vw , 3.3125rem );
-            column-gap: clamp( 2.375rem , 0.7083333333rem  +  3.4722222222vw , 3.3125rem );
+    -webkit-column-gap: clamp( 1.875rem , -0.6805555556rem  +  5.3240740741vw , 3.3125rem );
+       -moz-column-gap: clamp( 1.875rem , -0.6805555556rem  +  5.3240740741vw , 3.3125rem );
+            column-gap: clamp( 1.875rem , -0.6805555556rem  +  5.3240740741vw , 3.3125rem );
   }
 }
 
-@supports not ((-moz-column-gap: clamp( 2.375rem , 0.7083333333rem  +  3.4722222222vw , 3.3125rem )) or (column-gap: clamp( 2.375rem , 0.7083333333rem  +  3.4722222222vw , 3.3125rem ))) {
+@supports not ((-moz-column-gap: clamp( 1.875rem , -0.6805555556rem  +  5.3240740741vw , 3.3125rem )) or (column-gap: clamp( 1.875rem , -0.6805555556rem  +  5.3240740741vw , 3.3125rem ))) {
   .menu__list {
-    -webkit-column-gap: calc(2.375rem + 0.9375 * (100vw - 48rem) / 27);
-       -moz-column-gap: calc(2.375rem + 0.9375 * (100vw - 48rem) / 27);
-            column-gap: calc(2.375rem + 0.9375 * (100vw - 48rem) / 27);
+    -webkit-column-gap: calc(1.875rem + 1.4375 * (100vw - 48rem) / 27);
+       -moz-column-gap: calc(1.875rem + 1.4375 * (100vw - 48rem) / 27);
+            column-gap: calc(1.875rem + 1.4375 * (100vw - 48rem) / 27);
   }
 }
 
@@ -2670,6 +2676,7 @@ body::after {
 }
 
 .food-content {
+  min-height: 400px;
   color: #fff;
 }
 
@@ -6552,7 +6559,7 @@ button.swiper-pagination-bullet {
     width: 188px;
     height: 442px;
     content: "";
-    background: url("../img/mobile-line-try.svg") 0 0 no-repeat;
+    background: url("../img/mobile-line-2.svg") 0 0 no-repeat;
     -webkit-transform: rotate(0deg);
         -ms-transform: rotate(0deg);
             transform: rotate(0deg);
